@@ -8,8 +8,8 @@ The model is a small CNN written from scratch in PyTorch. Training and testing r
 separate Docker containers.
 
 ## Dataset
-- Name / source: <<< FILL IN (Kaggle dataset name and URL)
-- Licence: <<< FILL IN (as stated on the dataset page; must allow academic use)
+- Name / source: Fresh and Rotten Classification by Swoyam Siddharth Nayak, Kaggle, https://www.kaggle.com/datasets/swoyam2609/fresh-and-stale-classification
+- Licence: Community Data License Agreement - Permissive - Version 1.0
 - Used folders: apples, bananas, oranges (fresh and rotten). Vegetable folders are ignored (`--fruits apple,banana,orange`).
 - 13,599 images after removing 4,896 exact duplicate files.
 - Split (seed 42): train 9,663 / validation 1,940 / test 1,996.
@@ -96,8 +96,10 @@ with a different CPU (AMD Ryzen 7 170 vs Intel i5-13420H) and gave exactly the s
 - Results are from a single run per setting.
 
 ## Generative AI declaration
-<<< FILL IN honestly how you used Claude (for example: help with project structure, code, debugging and Docker commands;
-I ran all experiments myself and can explain every file).
+I used Claude (Anthropic) as a learning and troubleshooting assistant while preparing this project. It helped me with Git setup and troubleshooting, Docker testing on a second laptop, and project documentation. I ran the model training, evaluation and Docker tests myself.
 
 ## References
-<<< FILL IN (dataset page, PyTorch documentation)
+- Dataset: Fresh and Rotten Classification by Swoyam Siddharth Nayak, https://www.kaggle.com/datasets/swoyam2609/fresh-and-stale-classification
+- Paszke, A. et al. (2019) PyTorch: An Imperative Style, High-Performance Deep Learning Library. NeurIPS.
+- Kingma, D. and Ba, J. (2015) Adam: A Method for Stochastic Optimization. ICLR.
+- Docker documentation, https://docs.docker.com
