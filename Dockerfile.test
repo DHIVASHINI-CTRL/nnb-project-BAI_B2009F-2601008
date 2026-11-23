@@ -1,0 +1,8 @@
+FROM python:3.11-slim
+WORKDIR /app
+COPY requirements-test.txt .
+RUN pip install --no-cache-dir -r requirements-test.txt --extra-index-url https://download.pytorch.org/whl/cpu
+COPY src/data.py src/model.py src/test.py src/predict.py src/
+ENV PYTHONPATH=/app/src PYTHONHASHSEED=0
+ENTRYPOINT ["python"]
+CMD ["src/test.py"]
